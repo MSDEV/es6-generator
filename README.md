@@ -16,3 +16,10 @@ We can run some code and return a value and go right back into the function at t
 ```
 
 ### Generator with Symbol.iterator
+```
+```
+
+### How to run
+```
+node index.js
+```
