@@ -2,14 +2,18 @@
 Iterations with generators
 */
 function* carShop() {
-    //RUN IT FIRST TIME UNTIL GET THE YELD
+    //RUN IT FIRST TIME UNTIL GET THE FIRST YELD
     console.log('going to buy my car....');
     
     const myInventory = yield 'MONEY';
 
-    console.log('bought my car....');
+    console.log('bought my car and going to insurance company....');
 
-    return myInventory;
+    const myInsurance = yield 'MORE MONEY';
+
+    console.log('poor again....');
+
+    return [myInventory, myInsurance];
 }
 
 const gen = carShop();
@@ -18,3 +22,6 @@ console.log(firstCall);
 
 var secondCall = gen.next('FORD F150');
 console.log(secondCall);
+
+var thirdCall = gen.next('INSURANCE');
+console.log(thirdCall);
