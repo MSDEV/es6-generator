@@ -23,14 +23,14 @@ const car = {
     avgPrice: '35k USD',
     marketLeader: 'Ford',
     [Symbol.iterator]: function* () {
-        yield `Nr Brand Leaders ${car.nrBrands}`;
-        yield `Avg Price: ${car.avgPrice}`;
+        yield `Nr Brand Leaders ${this.nrBrands}`;
+        yield `Avg Price: ${this.avgPrice}`;
     
-        yield* car.ford;  
+        yield* this.ford;  
 
-        yield* car.chevy;
+        yield* this.chevy;
     
-        yield `Leader 2016: ${car.marketLeader}`;
+        yield `Leader 2016: ${this.marketLeader}`;
     }
 };
 
