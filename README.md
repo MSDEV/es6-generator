@@ -1,5 +1,4 @@
 # es6-generator
-ES6 - Generator
 
 ### What is Generator?
 Is a function that can be entered and exit multiple times!
@@ -36,6 +35,7 @@ for (let car of cars()) {
 
 ### Generator delegation
 ```
+Please, look at the delegation.js file.
 ```
 
 ### Generator with Symbol.iterator
@@ -47,4 +47,6 @@ for (let car of cars()) {
 node index.js
 or
 node cars.js
+or 
+node delegation.js
 ```
