@@ -21,22 +21,21 @@ const car = {
     chevy,
     nrBrands: 2,
     avgPrice: '35k USD',
-    marketLeader: 'Ford'
+    marketLeader: 'Ford',
+    [Symbol.iterator]: function* () {
+        yield `Nr Brand Leaders ${car.nrBrands}`;
+        yield `Avg Price: ${car.avgPrice}`;
+    
+        yield* car.ford;  
+
+        yield* car.chevy;
+    
+        yield `Leader 2016: ${car.marketLeader}`;
+    }
 };
 
-function* CarIterator(car) {
-    yield `Nr Brand Leaders ${car.nrBrands}`;
-    yield `Avg Price: ${car.avgPrice}`;
-    
-    yield* car.ford;  
-
-    yield* car.chevy;
-    
-    yield `Leader 2016: ${car.marketLeader}`;
-}
-
 const weirdExample = [];
-for (let item of CarIterator(car)) {
+for (let item of car) {
     weirdExample.push(item);
 }
 
