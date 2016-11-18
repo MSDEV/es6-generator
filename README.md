@@ -40,13 +40,16 @@ Please, look at the delegation.js file.
 
 ### Generator with Symbol.iterator
 ```
+Please, look at the symbol.js file.
 ```
 
 ### How to run
 ```
 node index.js
-or
+and
 node cars.js
-or 
+and
 node delegation.js
+and
+node symbol.js
 ```
