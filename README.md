@@ -27,6 +27,8 @@ gen.next(); //=> { "done":true }
 ### Why to use?
 Works perfectly with for of loops :)
 
+You can use it to do async functions...
+
 ```
 for (let car of cars()) {
     console.log(car);
