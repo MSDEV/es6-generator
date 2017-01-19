@@ -1,7 +1,7 @@
 # es6-generator
 
-### What is Generator?
-Is a function that can be entered and exit multiple times!
+### What are Generators?
+Generators are functions that can generate multiple values on a per-request basis and can suspend their execution between requests.
 
 ### What does it do?
 We can run some code and return a value and go right back into the function at the same place you left it.
